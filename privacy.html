@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Colab Drive Fallback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav aria-label="Main"><a href="./">Overview</a><a href="privacy.html" aria-current="page">Privacy policy</a></nav></header>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="intro">Colab Drive Fallback is a personal-use desktop OAuth configuration for rclone. Effective date: 8 November 2026.</p>
+  <h2>Google data accessed and purpose</h2>
+  <p>With the account owner's permission, the client accesses Google Drive file metadata and file contents to list or locate the owner's intended research files, read datasets, and create or update outputs and checkpoints. Its read/write permission can also allow deletion of files when explicitly requested by the owner. It does not request Google Photos, Gmail or Contacts access.</p>
+  <h2>Where data and credentials are stored</h2>
+  <p>Files remain in Google Drive unless the owner chooses to download, cache or process them on a local computer or an explicitly approved compute environment. OAuth credentials are stored in protected client configuration on the owner's computer. Placing credentials or data in a remote runtime is a separate owner-controlled decision; anyone controlling that runtime may be able to access them.</p>
+  <p>Temporary filesystem cache can contain file contents or pending uploads. It is controlled by the computer or runtime on which the client operates. Losing that runtime can destroy unsent cache; it does not remove files whose upload to Drive has already completed.</p>
+  <h2>Sharing and use</h2>
+  <p>The configuration has no separate operator-hosted data-processing or storage backend. It does not sell Google user data, use it for advertising, or provide it to unrelated third parties. Transfers occur between Google Drive and the owner-authorized client or compute environment. Google and the selected compute or hosting providers process their services under their own terms and privacy policies. This configuration's use of Google API data is limited to the file-access functionality described here and follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+  <h2>Retention, revocation and deletion</h2>
+  <p>The owner controls retention of files in Drive, downloaded data and local cache. Access can be revoked through <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>. The owner can also stop mounts and remove the local rclone configuration, credentials and cache. Revoking access or deleting client configuration does not itself delete research files already stored in Drive; deleting those files is a separate owner action.</p>
+  <h2>This information website</h2>
+  <p>This static website contains no login form, OAuth callback, application analytics script, or file-upload feature. It does not receive Drive credentials or file contents. Its hosting provider, GitHub Pages, may process ordinary website request information under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+  <h2>Contact and changes</h2>
+  <p>Questions can be sent through the <a href="https://github.com/huahuadeliaoliao/colab-drive-fallback/issues">project's issue tracker</a>. Public issues must not include credentials, personal account identifiers or private files. Changes to this policy will be published on this page with an updated effective date.</p>
+</main>
+<footer><p><a href="./">Return to the overview</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Purpose and privacy information for Colab Drive Fallback, a personal-use Google Drive desktop client configuration.">
+  <title>Colab Drive Fallback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav aria-label="Main"><a href="./" aria-current="page">Overview</a><a href="privacy.html">Privacy policy</a></nav></header>
+<main>
+  <h1>Colab Drive Fallback</h1>
+  <p class="intro">A personal-use desktop OAuth configuration for accessing the account owner's Google Drive with rclone.</p>
+  <h2>Purpose</h2>
+  <p>This configuration supports an authorized personal research workflow. Native Google Colab Drive mounting is preferred. An independently authorized rclone filesystem mount can be used as a fallback when the native flow requires owner-device verification that is not currently available.</p>
+  <p>It is not a public storage service, a sign-in service, or a file relay. This website provides information only. It does not perform authentication, receive OAuth callbacks, accept uploads, or access Drive files.</p>
+  <h2>Requested access</h2>
+  <p>The desktop client requests Google Drive read and write access so that the owner can read datasets and create or update research outputs and checkpoints. That Google permission can also permit file deletion; the owner should only run trusted code and authorize operations they intend.</p>
+  <p>Files are transferred directly between Google Drive and the local client or an explicitly approved compute environment. A mounted folder can use temporary local cache; a file is not a durable backup until its upload has completed.</p>
+  <h2>Personal use</h2>
+  <p>This configuration is intended for the account owner's own use. It is not an invitation for other people to authorize their accounts. It is independently operated and is not an official Google or rclone service.</p>
+  <h2>Privacy and support</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a> for information about access, storage, revocation and deletion. For questions about this configuration, contact its maintainer through the <a href="https://github.com/huahuadeliaoliao/colab-drive-fallback/issues">project's issue tracker</a>. Do not include credentials, private filenames or file contents in public issues.</p>
+</main>
+<footer><p>Last updated: 8 November 2026.</p></footer>
+</body>
+</html>
